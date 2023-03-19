@@ -1,0 +1,62 @@
+{
+  "name": "pryaniky-test",
+  "author": "riptid3r",
+  "description": "Test task",
+  "version": "0.1.0",
+  "config-overrides-path": "./rewire/override.js",
+  "homepage": "http://riptid3r.github.io/pryaniky-test",
+  "scripts": {
+    "start": "env-cmd -f .env.development react-app-rewired start",
+    "build": "env-cmd -f .env.production react-app-rewired build",
+    "format": "prettier --write ./src/**/*.{ts,tsx,json} --config ./.prettierrc",
+    "deploy": "yarn build && gh-pages -d build"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@hookform/resolvers": "^2.9.11",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.13",
+    "@mui/styles": "^5.11.13",
+    "@mui/x-data-grid": "^6.0.2",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "axios": "^1.3.4",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.5",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "customize-cra": "^1.0.0",
+    "env-cmd": "^10.1.0",
+    "gh-pages": "^5.0.0",
+    "prettier": "^2.8.4",
+    "react-app-rewired": "^2.2.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
