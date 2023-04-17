@@ -2,6 +2,7 @@
 # Тестовое задание
 
 > Демо: [GitHub Pages](https://riptid3r.github.io/pryaniky-test/).
+*Для авторизации использовать данные: user1 и password*
 
 **Список задач:**
 * Страница авторизации
